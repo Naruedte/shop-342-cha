@@ -1,0 +1,193 @@
+/* styles.module.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #262a31;
+  padding: 1rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .btn {
+  color: white;
+  margin-left: 1rem;
+}
+
+/* Card Styles */
+.cardContainer {
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 100px;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  width: 300px;
+  margin: 10px;
+}
+
+.productGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: auto;
+}
+
+.productCard {
+  width: calc(50% - 10px);
+  margin: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.productCard img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.cardBody {
+  padding: 1rem;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Button Styles */
+.btn {
+  background-color: #001aff;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #ff0909;
+}
+
+.btnSecondary {
+  background-color: #6c757d;
+}
+
+.btnSecondary:hover {
+  background-color: #5a6268;
+}
+
+/* Badge Styles */
+.badge {
+  background-color: #ff4757;
+  border-radius: 12px;
+  color: white;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Avatar Styles */
+.avatar img {
+  width: 50px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Dropdown Styles */
+.dropdownContent {
+  transition: opacity 0.3s ease, transform 0.5s ease;
+  opacity: 0;
+  transform: translateY(10px);
+  visibility: hidden;
+}
+
+.dropdownContent.show {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+/* Shopping Cart Styles */
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: white;
+  border-left: 1px solid #ccc;
+  padding: 2rem;
+  width: 300px;
+  height: 100vh;
+  overflow-y: auto;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.cart h2 {
+  margin-bottom: 1rem;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart li {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart button {
+  margin-left: 0.5rem;
+}
+
+/* Input Styles */
+input[type="text"] {
+  padding: 0.5rem;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  width: calc(100% - 1rem);
+  margin: 1rem 0;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #000000;
+}
+
+/* Container Styles */
+.container {
+  flex-direction: row;
+  padding: 1rem;
+}
+ 
